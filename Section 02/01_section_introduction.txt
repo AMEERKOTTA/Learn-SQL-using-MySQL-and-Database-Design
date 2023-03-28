@@ -1,0 +1,7 @@
+WHAT TO LEARN IN THIS CONTENT.
+
++ What a Database is ?
++ What SQL and MySQL are, and how they are Related.
++ What a Relational Database Management System is.
++ Installation and Setup of MySQL and MySQL Workbench.
++ Writing your first SQL Queries.
