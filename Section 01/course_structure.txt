@@ -1,0 +1,51 @@
+Section 2 :
+
+	+ Learn about Databases, SQL and MySQL
+	+ Install and Setup MySQL and MySQL Workbench.
+
+Section 3 : 
+	
+	+ Primary and Foreign Keys
+	+ How to Create, Modify and Delete Tables.
+	+ Creating a Database for a Coffee Shop.
+
+Section 4 : 
+
+	+ How to Insert, Update and Delete Data.
+	+ Insert Data to the Coffee Shop Database.
+
+Section 5 :
+
+	+ How to Retrieve Data from a Table.
+	+ Filter using where clause.
+	+ Ordering your Data.
+
+Section 6 : 
+
+	+ Retrieve Data from more than one table.
+	+ How to use table joins.
+	+ Difference between Joins.
+
+Section 7 : 
+
+	+ Learn about Database Design.
+	+ Normalization.
+	+ Relationships.
+	+ Constraints.
+
+Section 8 :
+
+	+ Create a Database for a Cinema Online Booking System.
+	+ Insert Data into this Database.
+
+Section 9 :
+
+	+ Learn about Aggregate Functions.
+	+ How to group data.
+	+ Use the having Clause.
+
+Section 10 :
+
+	+ Learn about Subqueries.
+	+ Non-Correlated Subqueries.
+	+ Correlated Subqueries.
