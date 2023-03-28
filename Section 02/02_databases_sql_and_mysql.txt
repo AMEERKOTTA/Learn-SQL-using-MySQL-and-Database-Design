@@ -1,0 +1,20 @@
+Databases, SQL and MySQL.
+
+What is a Database : A Database is an Organized Collection of Information (DATA).
+
+Example : Index of a Book.
+
+SQL : Structured Query Language.
+
+  + It is a Standard Language Used to Communicate with Databases.
+  + SQL is used to Perform tasks on Databases.
+  + Example Query : select * from table;
+  
+MySQL : Relational Database Management System.
+
+  + It provides a user Interface to access and interact with the database.
+  + Different RDBMS are 
+      + MySQL
+      + Postgre SQL
+      + SQL Server
+      + Oracle
