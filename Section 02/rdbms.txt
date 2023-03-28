@@ -1,0 +1,6 @@
+Relational Database Management System.
+
++ A Relational Database is a Collection of Data Organized into tables.
++ Tables contains columns of data categories.
++ And rows with particular instances of that data category.
++ Tables in Relational Databases can be Linked together.
