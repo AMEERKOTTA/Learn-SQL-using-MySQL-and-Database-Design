@@ -1,0 +1,13 @@
+Section Overview
+
+	- Data Types
+	- Primary Key and Foreign Key
+	- Creating Tables
+	- Modifying Tables
+	- Deleting Tables
+	- Deleting all Data from Tables.
+
+Create Your First Database
+
+	- Creating DB for a Coffee Shop
+	- Create Table PRODUCTS, CUSTOMERS and ORDERS.
