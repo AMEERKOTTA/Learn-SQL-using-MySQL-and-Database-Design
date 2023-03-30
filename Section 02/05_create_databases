@@ -1,6 +1,6 @@
 Query for Creating a Database.
 
-  **CREATE DATABASE test;  This will create a database named "test"**
+  CREATE DATABASE test;  This will create a database named "test"
   USE test;              This query is used to USE the given databases.
   SHOW TABLES;           This will show the tables.
   DROP DATABASE test;    This will drop the Created database.
