@@ -4,3 +4,20 @@ Query for Creating a Database.
   USE test;              This query is used to USE the given databases.
   SHOW TABLES;           This will show the tables.
   DROP DATABASE test;    This will drop the Created database.
+  
+  
+SQL Commands or Queries are given below.
+
+## show databases
+show databases
+## create the test database
+create database test;
+show databases;
+## use the test database
+use test;
+show tables;
+
+## drop the test database
+drop database test;
+
+show databases
