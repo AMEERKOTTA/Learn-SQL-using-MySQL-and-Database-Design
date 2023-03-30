@@ -1,0 +1,22 @@
+Different Data Types
+
+  Numerical Data Types
+  
+  + Integer : Whole Numbers
+  + Float (M, D) : Decimal Numbers (Approximate)
+  + Decimal (M, D) : Decimal Numbers (Precise)
+  
+  Non - Numerical Data Types
+  
+  + CHAR (N) : Fixed Length Character.
+  + VARCHAR (N) : Varying Length Character
+  + ENUM ("M", "F") : Value from a Defined List.
+  + BOOLEAN : True or False Values.
+  
+  Date and Time Types
+  
+  + DATE : date (YYYY-MM-DD)
+  + DATETIME : date and time (YYYY-MM-DD HH-MM-SS)
+  + TIME : time (HHH-MM-SS)
+  + YEAR : Year (YYYY)
+  
