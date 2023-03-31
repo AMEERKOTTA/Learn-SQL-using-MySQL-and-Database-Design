@@ -1,0 +1,28 @@
+SHOW DATABASES;
+## use the coffee_store database
+USE coffee_store;
+## show tables
+SHOW TABLES;
+
+## select * from products
+SELECT * FROM products;
+
+## Adding a Column to the Product Table
+ALTER TABLE Products
+ADD COLUMN CoffeeOrigin VARCHAR(30);
+
+## select * from Products
+SELECT * FROM Products;
+
+## add another column
+ALTER TABLE Products
+ADD COLUMN ColumnCheck CHAR(10);
+
+SELECT * FROM Products;
+
+## delete or Remove the ColumnCheck Column
+ALTER TABLE Products
+DROP COLUMN ColumnCheck;
+
+SELECT * FROM Products;
+
