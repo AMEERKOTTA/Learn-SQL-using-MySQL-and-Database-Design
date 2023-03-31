@@ -1,0 +1,22 @@
+SHOW DATABASES;
+## create an example database
+CREATE DATABASE example;
+## use the example database
+USE example;
+## create a test table.
+## columns -- Id, Name, Age
+CREATE TABLE test(
+	Id INT auto_increment PRIMARY KEY,
+    Name VARCHAR(30),
+    Age INT
+);
+
+SHOW TABLES;
+
+## select from the test
+SELECT * FROM test;
+
+## drop the table test
+DROP TABLE test;
+
+SHOW TABLES;
