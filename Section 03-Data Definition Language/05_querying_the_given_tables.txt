@@ -1,0 +1,8 @@
+SHOW DATABASES;
+USE coffee_store;
+## show tables
+SHOW TABLES;
+## select * from customers
+SELECT * FROM CUSTOMERS;
+SELECT * FROM PRODUCTS;
+SELECT * FROM ORDERS;
