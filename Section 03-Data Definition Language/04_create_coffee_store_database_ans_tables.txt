@@ -1,0 +1,55 @@
+show databases;
+## create the database coffee_store
+CREATE DATABASE coffee_store;
+## show the databases again
+SHOW DATABASES;
+## use the coffee_store database
+USE coffee_store;
+## show tables in the coffee_store database
+SHOW TABLES;
+## create the first Table called Products Table
+## there will be three columns.
+## Id column - Integer Type, Auto Increment, Primary Key.
+## Name Column - Varyable Length (30)
+## Price Column - Decimal (3 maximum, with 2 decimal values) like 8.69 etc.
+## create the Table.
+CREATE TABLE Products(
+	Id INT auto_increment PRIMARY KEY,
+    Name VARCHAR(30),
+    Price DECIMAL(3,2)
+);
+## show tables again
+SHOW TABLES;
+
+## create the Customer Table
+## Columns are Id, First Name, Last Name, Gender, Phone Number.
+## Id - Integer, Auto Increment, Primary Key.
+## First Name - Varyable Length of Upto 20.
+## Second Name - Varyable Length of Upto 20.
+## Gender - Single Character M/F CHAR(1)
+## Phone Number - Character of 10 CHAR(10)
+CREATE TABLE Customers(
+	Id INT auto_increment PRIMARY KEY,
+    FirstName VARCHAR(30),
+    SecondName VARCHAR(30),
+    Gender ENUM("M","F"),
+    PhoneNumber VARCHAR(11)
+);
+
+## show the tables again
+SHOW TABLES;
+
+## create table orders
+## Columns - Id, ProductId, CustomerId, OrderTime.
+## ProductId and CustomerId will be Foreign Keys.
+CREATE TABLE Orders(
+	Id INT auto_increment PRIMARY KEY,
+    ProductId INT,
+    CustomerId INT,
+    OrderTime DATETIME,
+    foreign key (ProductId) references products(Id),
+    foreign key (CustomerId) references customers (Id)
+);
+
+## show tables again
+SHOW TABLES;
