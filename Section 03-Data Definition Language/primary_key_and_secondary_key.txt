@@ -1,0 +1,18 @@
+PRIMARY AND SECONDARY KEYS
+
+PRIMARY KEYS
+
++ Primary Key is a Column, or set of columns which uniquely identifies a record within a Table.
++ Primary Key (Column) must be Unique. --- Unique Column.
++ Primary Key (Column) cannot be NULL. --- Unique NOT NULL Column.
++ A table can Only have One Primary Column. 
+
+FOREIGN KEYS
+
++ Foreign Key (Column) is Used to Link two Tables Together.
++ Foreign Key is a Column whose Values matches values of another tables Primary Key Columns.
++ Table with Primary Key (Column) is called Reference Table / Parent Table.
++ Table with Foreign Keys (Columns) is called Child Table.
++ A table can have Multiple Foreign Keys (Multiple Columns as Foreign Keys).
++ ie, we can link multiple tables with different foreign keys.
+
