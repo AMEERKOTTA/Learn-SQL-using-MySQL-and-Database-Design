@@ -1,0 +1,34 @@
+SHOW DATABASES;
+USE test;
+SHOW TABLES;
+
+DESCRIBE addresses;
+
+## SQL Commands to add and remove Primary Keys using the Alter table Commands
+## SYNTAX
+ALTER TABLE <table name>
+ADD PRIMARY KEY (columns name);
+## SQL Commands to add and remove Primary Keys using the Alter table Commands
+ALTER TABLE <table name>
+DROP PRIMARY KEY
+
+ALTER TABLE addresses
+ADD PRIMARY KEY(Id);
+
+ALTER TABLE addresses
+DROP PRIMARY KEY;
+
+DESCRIBE addresses;
+SELECT * FROM addresses;
+
+## Peoples Table
+
+DESCRIBE People;
+
+ALTER TABLE people
+ADD PRIMARY KEY (Id);
+
+ALTER TABLE PEOPLE
+DROP primary key;
+
+DESCRIBE People;
