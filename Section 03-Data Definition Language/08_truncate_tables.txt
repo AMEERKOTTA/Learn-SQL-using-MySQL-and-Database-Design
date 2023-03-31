@@ -1,0 +1,30 @@
+To Delete all types of Data from the Table.
+
+
+TRUNCATE TABLE test;
+
+==================================================
+
+SHOW DATABASES;
+## create an example database
+CREATE DATABASE example;
+## use the example database
+USE example;
+SHOW TABLES;
+## create a test table.
+## columns Id, Name, Age
+CREATE TABLE test(
+	Id INT auto_increment PRIMARY KEY,
+    Name VARCHAR(30),
+    Age INT
+);
+
+SHOW TABLES;
+
+## select from the test
+SELECT * FROM test;
+
+## truncate data from test
+TRUNCATE TABLE test;
+
+SELECT * FROM test;
