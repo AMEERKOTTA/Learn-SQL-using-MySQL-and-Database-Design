@@ -1,0 +1,34 @@
+SHOW DATABASES;
+## create a test database
+CREATE DATABASE test;
+SHOW DATABASES;
+USE test;
+
+## create a table Addresses.
+## Columns - Id, HouseNumber, City, PostCode
+CREATE TABLE addresses(
+	Id INT,
+    HouseNumber INT,
+    City VARCHAR(20),
+    PostCode VARCHAR(30)
+);
+
+## create a Table Peoples.
+## columns - Id, FirstName, LastName, AdressId.
+CREATE TABLE People(
+	Id INT,
+    FirstName VARCHAR(20),
+    LastName VARCHAR(20),
+    AddressId INT
+);
+
+## create a Table Pets
+## columns - Id, Name, Species, OwnerId
+CREATE TABLE Pets(
+	Id INT,
+    Name VARCHAR(20),
+    Species VARCHAR(20),
+    OwnerId INT
+);
+
+SHOW TABLES;
