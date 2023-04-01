@@ -1,0 +1,30 @@
+SHOW DATABASES;
+USE test;
+
+SHOW TABLES;
+
+==============================================================================
+## Syntax to Add a Foreign Key to a Table.
+ALTER TABLE <tablename>
+ADD CONSTRAINT <constraintname>
+FOREIGN KEY (<columnname>) REFERENCES <tablename> (<columnname>);
+
+## Syntax for Dropping/Removing a Foreign Key from a Table.
+ALTER TABLE <tablename>
+DROP FOREIGN KEY <constraintname>;
+===============================================================================
+
+## Adding a Foreign Key to People Table Referencing the Addresses Table.
+ALTER TABLE People
+ADD CONSTRAINT FK_PeopleAddress
+FOREIGN KEY (AddressId) REFERENCES Addresses(Id);
+
+## Removing the Foreign Key
+ALTER TABLE People
+DROP FOREIGN KEY FK_PeopleAddress;
+
+SELECT * FROM People;
+SELECT * FROM Addresses;
+
+DESCRIBE addresses;
+DESCRIBE people;
