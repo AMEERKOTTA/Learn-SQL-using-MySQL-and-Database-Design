@@ -1,0 +1,42 @@
+## EXERCISES
+SHOW DATABASES;
+USE test;
+
+SHOW TABLES;
+
+## Add a Primary to the ID fields in the Pets and People Tables
+ALTER TABLE people
+ADD PRIMARY KEY (Id);
+
+ALTER TABLE pets
+ADD PRIMARY KEY (Id);
+
+## Add a Foreign key to the Owner Id fields in the Pets table referencing the Id field in the People Table
+ALTER TABLE pets
+ADD CONSTRAINT FK_ownerid
+FOREIGN KEY (Owner_Id) REFERENCES people (Id);
+
+## Add a Column named email to the People table
+ALTER TABLE people
+ADD COLUMN Email_Id VARCHAR(20);
+
+## Add a Unique Constraint to the email column in the People Table.
+ALTER TABLE people
+ADD CONSTRAINT u_email UNIQUE (Email_Id);
+
+## Rename the name column in the pets table to First_Name.
+ALTER TABLE pets
+CHANGE `Name` `FirstName` VARCHAR(20);
+
+
+## Change the PostCode Data Type to Char(7) in the Addresses Table
+ALTER TABLE addresses
+MODIFY PostCode CHAR(7);
+
+SELECT * FROM People;
+
+
+
+DESCRIBE addresses;
+DESCRIBE people;
+DESCRIBE pets;
