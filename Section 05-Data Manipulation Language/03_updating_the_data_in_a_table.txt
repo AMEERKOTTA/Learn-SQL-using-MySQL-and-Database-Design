@@ -1,0 +1,62 @@
+SHOW DATABASES;
+USE coffee_origin;
+
+SHOW TABLES;
+
+==========================================================
+## Syntax to Update the Data in a Table
+UPDATE <tablename>
+SET <columnname> = 'value'
+WHERE <columnname> = 'value';
+==========================================================
+
+## Updating Last Element
+UPDATE products
+SET CoffeeOrigin = 'INDIA'
+WHERE Id = 7;
+
+SET SQL_SAFE_UPDATES = 0;  After this we don't want to use the Primary Key all the time in the WHERE Clause, 
+                           Instead we can use other WHERE conditions.
+
+## Method to Update Multiple Data with one SQL Statement.
+### Line 1
+UPDATE products
+SET Name = 'ESPRESSO', CoffeeOrigin = 'BRAZIL'
+WHERE Id = 1;
+
+## line 2
+UPDATE products
+SET Name = 'MACCHIATO', Price = 3.00, CoffeeOrigin = 'BRAZIL'
+WHERE Id = 2;
+
+## Line 3
+UPDATE products
+SET Name = 'CAPPUCCINO', Price = 3.50, CoffeeOrigin = 'COSTA RICA'
+WHERE Id = 3;
+
+## Line 4
+UPDATE products
+SET Name = 'LATTE', Price = 3.50, CoffeeOrigin = 'INDONESIA'
+WHERE Id = 4;
+
+## Line 5
+UPDATE products
+SET Name = 'AMERICANO', Price = 3.00, CoffeeOrigin = 'BRAZIL'
+WHERE Id = 5;
+
+## Line 6
+UPDATE products
+SET Name = 'FLATWHITE', Price = 3.50, CoffeeOrigin = 'INDONESIA'
+WHERE Id = 6;
+
+## Line 7
+UPDATE products
+SET Name = 'FILTER', Price = 3.00, CoffeeOrigin = 'INDIA'
+WHERE Id = 7;
+
+## Updating Multiple Rows in a Single Command
+UPDATE products
+SET CoffeeOrigin = 'COLUMBIA'
+WHERE CoffeeOrigin = 'BRAZIL';
+
+SELECT * FROM products;
