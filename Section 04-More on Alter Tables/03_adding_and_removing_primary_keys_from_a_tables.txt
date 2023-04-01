@@ -4,6 +4,7 @@ SHOW TABLES;
 
 DESCRIBE addresses;
 
+==============================================================================
 ## SQL Commands to add and remove Primary Keys using the Alter table Commands
 ## SYNTAX
 ALTER TABLE <table name>
@@ -11,6 +12,8 @@ ADD PRIMARY KEY (columns name);
 ## SQL Commands to add and remove Primary Keys using the Alter table Commands
 ALTER TABLE <table name>
 DROP PRIMARY KEY
+==============================================================================
+
 
 ALTER TABLE addresses
 ADD PRIMARY KEY(Id);
