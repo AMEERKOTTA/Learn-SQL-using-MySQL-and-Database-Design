@@ -1,0 +1,37 @@
+SHOW DATABASES;
+USE coffee_store;
+SHOW TABLES;
+
+=========================================================
+## Syntax to INSERT DATA TO A TABLE
+INSERT INTO <tablename> (<column1>,<column2>,<column3>)
+VALUES ('value1','value2','value3'),
+       ('value4','value5','value6');
+=========================================================
+
+## inserting fist line to products tables.
+DESCRIBE products;
+
+INSERT INTO products
+(Name, Price, CoffeeOrigin)
+VALUES ('Espresso','2.50','Brazil');
+
+INSERT INTO products
+(Name, Price, CoffeeOrigin)
+VALUES ('AVT',3.50,'Kerala'),
+		('CHAYA', 1.00,'Kerala');
+        
+INSERT INTO products
+(Name, Price, CoffeeOrigin)
+VALUES ('AVT',3.50,'Kochi'),
+		('CHAYA', 1.00,'Kannur'),
+        ('Mouse',3.99,'China'),
+        ('Laptop',1.00,'USA');
+        
+TRUNCATE TABLE products;
+
+SELECT * FROM products;
+
+DESCRIBE products;
+DESCRIBE customers;
+DESCRIBE orders;
