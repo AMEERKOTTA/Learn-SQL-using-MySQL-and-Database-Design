@@ -1,0 +1,20 @@
+SHOW DATABASES;
+USE test;
+
+SHOW TABLES;
+
+===============================================
+## Syntax for Changing the Data Types.
+ALTER TABLE <tablename>
+MODIFY <columnname><DATA TYPE>;
+===============================================
+
+## modifying City Data Type from Varchar(20) to Varchar(30)
+ALTER TABLE addresses
+MODIFY City VARCHAR(30);
+
+## modifying PostCode Data Type from Varchar(30) to Varchar(10)
+ALTER TABLE addresses
+MODIFY PostCode VARCHAR(10);
+
+DESCRIBE addresses;
