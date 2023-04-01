@@ -13,7 +13,7 @@ CREATE TABLE addresses(
     PostCode VARCHAR(30)
 );
 
-## create a Table Peoples.
+## create a Table People.
 ## columns - Id, FirstName, LastName, AdressId.
 CREATE TABLE People(
 	Id INT,
