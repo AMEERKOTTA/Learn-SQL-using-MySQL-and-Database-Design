@@ -1,0 +1,22 @@
+SHOW DATABASES;
+USE test;
+
+SHOW TABLES;
+
+
+==========================================================
+## Syntax to Change the Column Name (Rename).
+ALTER TABLE <tablename>
+CHANGE `old_column_name` `new_column_name` <DATA TYPE>;
+==========================================================
+
+## Changing OwnerId to Owner_Id
+ALTER TABLE pets
+CHANGE `OwnerId` `Owner_Id` INT;
+
+## Changing the Species to Species_Type
+ALTER TABLE pets
+CHANGE `Species` `Species_Type` VARCHAR(20);
+
+SELECT * FROM PETS;
+DESCRIBE Pets;
