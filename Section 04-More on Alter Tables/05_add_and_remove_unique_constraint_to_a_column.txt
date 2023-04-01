@@ -1,0 +1,26 @@
+SHOW DATABASES;
+USE test;
+SHOW TABLES;
+
+=========================================================
+## Syntax for Adding a Unique Constraint
+ALTER TABLE <tablename>
+ADD CONSTRAINT <constraintname> UNIQUE (<columnname>);
+
+## Syntax for Removing the Unique Constraint
+ALTER TABLE <tablename>
+DROP INDEX <constraintname>;
+=========================================================
+
+ALTER TABLE pets
+ADD CONSTRAINT u_value UNIQUE (species);
+
+ALTER TABLE pets
+DROP INDEX u_value;
+
+SELECT * FROM pets;
+
+
+DESCRIBE addresses;
+DESCRIBE people;
+DESCRIBE pets;
