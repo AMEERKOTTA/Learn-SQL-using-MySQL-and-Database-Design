@@ -1,0 +1,36 @@
+SHOW DATABASES;
+USE example;
+
+SHOW TABLES;
+
+====================================================
+## Syntax for Deleting the Data from a Table
+DELETE FROM <tablename>
+WHERE <columnname> = 'value';
+====================================================
+
+CREATE TABLE people(
+	Id INT auto_increment PRIMARY KEY,
+    NAME VARCHAR(20),
+    AGE INT,
+    GENDER ENUM('M','F')
+);
+
+INSERT INTO people (NAME, AGE, GENDER)
+    VALUES ('EMMA',21,'F'),
+		   ('JOHN',30,'M'),
+           ('THOMAS',27,'M'),
+           ('CHRIS',44,'M'),
+           ('SALLY',23,'F'),
+           ('FRANK',55,'M');
+           
+DELETE FROM people
+WHERE NAME = 'EMMA';
+
+DELETE FROM people
+WHERE GENDER = 'F';
+
+## Delete Everything from the Table
+DELETE FROM people;
+
+SELECT * FROM people;
