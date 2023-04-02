@@ -1,0 +1,17 @@
+## USE INEQUALITY SYMBOLS IN WHERE CLAUSE
+
+SHOW DATABASES;
+USE coffee_store;
+SHOW TABLES;
+
+SELECT * FROM products
+WHERE Price > 3.00;
+
+SELECT * FROM products
+WHERE Price < 4.00;
+
+SELECT * FROM products
+WHERE Price >= 3.00 AND Price <= 4.00;
+
+SELECT * FROM products
+WHERE Price >= 3.00 OR Price <= 4.00;
