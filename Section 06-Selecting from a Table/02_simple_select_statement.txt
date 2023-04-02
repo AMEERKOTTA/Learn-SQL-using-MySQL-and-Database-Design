@@ -1,0 +1,15 @@
+SHOW DATABASES;
+USE coffee_store;
+SHOW TABLES;
+
+## to retrieve all data from the table
+SELECT * FROM customers;
+## to get the data from a single column from a table
+SELECT FirstName FROM customers;
+SELECT FirstName, PhoneNumber FROM customers;
+
+
+
+SELECT * FROM customers;
+SELECT * FROM orders;
+SELECT * FROM products;
