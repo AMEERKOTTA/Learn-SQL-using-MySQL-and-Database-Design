@@ -1,0 +1,17 @@
+## Checking the NULL values in the Column.
+
+SHOW DATABASES;
+USE coffee_store;
+SHOW TABLES;
+
+SELECT * FROM customers
+WHERE PhoneNumber IS NULL;
+
+SELECT * FROM customers
+WHERE SecondName IS NULL;
+
+SELECT * FROM customers
+WHERE PhoneNumber AND SecondName IS NULL;
+
+SELECT * FROM customers
+WHERE PhoneNumber IS NOT NULL;
