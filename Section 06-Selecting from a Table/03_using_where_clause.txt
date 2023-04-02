@@ -1,0 +1,20 @@
+## WHERE CLAUSE
+
+SHOW DATABASES;
+USE coffee_store;
+SHOW TABLES;
+
+## Filter the Extraction using WHERE Clause
+SELECT * FROM products
+WHERE CoffeeOrigin = 'COLUMBIA';
+
+SELECT * FROM products
+WHERE Price = 3.00;
+
+## AND Operation
+SELECT * FROM products
+WHERE Price = 3.00 AND CoffeeOrigin = 'COLUMBIA';
+
+## OR Operation
+SELECT * FROM products
+WHERE Price = 3.00 OR CoffeeOrigin = 'COLUMBIA';
