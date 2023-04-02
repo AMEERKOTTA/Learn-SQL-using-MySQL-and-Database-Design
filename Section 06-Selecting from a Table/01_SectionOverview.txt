@@ -5,3 +5,7 @@ Section Overview
 	+ Adding WHERE Clause to filter your Query.
 	+ How to use IN, BETWEEN and LIKE Commands.
 	+ How to ORDER your result set by Columns.
+	+ How to limit your number of rows in your Extraction.
+	+ How to Remove Duplicate Values.
+	+ How to set column name Alias.
+	+ Exercise to Practice the Skill.
