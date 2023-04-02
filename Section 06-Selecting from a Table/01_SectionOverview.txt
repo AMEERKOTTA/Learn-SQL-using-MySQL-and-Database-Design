@@ -1,0 +1,7 @@
+Section Overview
+
+
+	+ How to Retrieve Data from a Table using SELECT Command.
+	+ Adding WHERE Clause to filter your Query.
+	+ How to use IN, BETWEEN and LIKE Commands.
+	+ How to ORDER your result set by Columns.
