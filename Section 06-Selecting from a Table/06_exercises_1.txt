@@ -1,0 +1,16 @@
+## EXERCISES
+SHOW DATABASES;
+USE coffee_store;
+SHOW TABLES;
+
+## From the customers table, select the firstname and phonenumber of all the females who have a last name of Bluth.
+SELECT FirstName, PhoneNumber FROM customers
+WHERE Gender = 'F' AND SecondName = 'Bluth';
+
+## From the Products table, selectthe name for all the products that have a price greater than 3.00 or coffeeorigin of SRILANKA.
+SELECT * FROM products
+WHERE Price > 3.00 OR CoffeeOrigin = 'INDIA';
+
+## How many male customers dont have a Phone Number entered into the Customer Table.
+SELECT Count(*) FROM customers
+WHERE PhoneNumber IS NULL AND Gender = 'M';
