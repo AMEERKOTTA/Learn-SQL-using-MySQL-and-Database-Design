@@ -6,4 +6,4 @@
 + Section 3 : Data Definition Language.
 + Section 4 : More on Alter Table.
 + Section 5 : Data Manipulation Language.
-+ Section 6 : 
++ Section 6 : Selecting from a Table
