@@ -7,3 +7,4 @@
 + Section 4 : More on Alter Table.
 + Section 5 : Data Manipulation Language.
 + Section 6 : Selecting from a Table.
++ Section 7 :
