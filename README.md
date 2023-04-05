@@ -9,7 +9,7 @@
 + Section 6 : Selecting from a Table.
 + Section 7 : 
 + Section 8 :  
-+ Section 9 :
++ Section 9 : 
 + Section 10 :
 + Section 11 :
 + Section 12 :
