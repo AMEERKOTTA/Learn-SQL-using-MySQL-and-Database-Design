@@ -1,0 +1,9 @@
+## COLUMN NAME ALIAS is used to Rename the Column only in the Result Set. 
+
+SELECT SecondName AS LastName, 
+PhoneNumber AS ContactInfo
+FROM customers;
+
+SELECT Name AS CoffeeName,
+CoffeeOrigin AS CountryofOrigin
+FROM products;
