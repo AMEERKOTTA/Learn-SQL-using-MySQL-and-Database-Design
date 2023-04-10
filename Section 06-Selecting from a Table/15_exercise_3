@@ -1,0 +1,19 @@
+## from customer table, select distinct last name
+## and order alphabetically from A-Z.
+
+SELECT DISTINCT SecondName FROM customers
+ORDER BY SecondName ASC;
+
+
+## from order table, select the first three orders placed by customer with id 1,
+## in feb 2017
+
+SELECT * FROM orders
+WHERE CustomerId = 1 AND 
+OrderTime BETWEEN '2017-02-01' AND '2017-02-28'
+ORDER BY OrderTime ASC
+LIMIT 3;
+
+## from the product table, select the name, price and coffee origin
+## but rename the price to retail_price in the result set.
+SELECT Name, Price AS retail_price, CoffeeOrigin FROM products;
