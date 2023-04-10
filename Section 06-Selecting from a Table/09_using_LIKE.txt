@@ -1,0 +1,33 @@
+SHOW DATABASES;
+USE coffee_store;
+SHOW TABLES;
+
+## '%' - Looking for any number of Characters
+## '_' - Looking for one single character.
+
+SELECT * FROM customers;
+SELECT * FROM products;
+
+## using LIKE command
+## followed by a % sign
+SELECT * FROM customers
+WHERE SecondName LIKE '%o%';
+
+SELECT * FROM customers
+WHERE FirstName LIKE 'S%';
+
+SELECT * FROM customers
+WHERE PhoneNumber LIKE '%77%';
+
+## using _
+SELECT * FROM customers
+WHERE FirstName LIKE '_a_';
+
+SELECT * FROM customers
+WHERE FirstName LIKE '_o_';
+
+SELECT * FROM products
+WHERE Price LIKE '2%';
+
+SELECT * FROM products
+WHERE Price LIKE '3.5%';
