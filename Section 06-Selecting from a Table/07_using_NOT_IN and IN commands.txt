@@ -1,0 +1,17 @@
+SHOW DATABASES;
+USE coffee_store;
+SHOW TABLES;
+
+## need to retrieve data from customer table
+## so that need to get the values whoose second names are Bluth, Armstrong, Williams
+SELECT * FROM customers
+WHERE SecondName IN ('Bluth','Armstrong','Williams');
+
+## now we want to exclude the phone number NULL values from the customers table
+## in the above Query.
+SELECT * FROM customers
+WHERE SecondName NOT IN ('NULL') and PhoneNumber NOT IN ('NULL');
+
+SELECT * FROM customers;
+SELECT * FROM orders;
+SELECT * FROM products;
