@@ -1,0 +1,33 @@
+SHOW DATABASES;
+USE coffee_store;
+SHOW TABLES;
+
+## Order by ProductId
+SELECT * FROM orders
+ORDER BY ProductId ASC;
+
+SELECT * FROM orders
+ORDER BY CustomerId ASC;
+
+SELECT * FROM orders
+ORDER BY Id ASC;
+
+SELECT * FROM products
+ORDER BY Price ASC;
+
+SELECT * FROM products
+ORDER BY Name DESC;
+
+SELECT * FROM products
+ORDER BY Price DESC;
+
+SELECT * FROM products
+ORDER BY Id DESC;
+
+SELECT * FROM orders
+WHERE CustomerId = 1
+ORDER BY OrderTime ASC;
+
+SELECT * FROM orders
+WHERE ProductId = 2
+ORDER BY OrderTime DESC;
