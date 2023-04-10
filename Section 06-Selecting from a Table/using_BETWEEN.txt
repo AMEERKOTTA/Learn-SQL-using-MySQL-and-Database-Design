@@ -1,0 +1,25 @@
+SHOW DATABASES;
+USE coffee_store;
+SHOW TABLES;
+
+SELECT * FROM customers;
+SELECT * FROM orders;
+SELECT * FROM products;
+
+## So i need to retrieve data from orders table
+## like for the first week of January
+## from 2017-01-01 to 2017-01-07
+SELECT * FROM orders
+WHERE OrderTime BETWEEN '2017-01-01' and '2017-01-07';
+
+## or Only select for required columns
+SELECT ProductId, CustomerId, OrderTime FROM orders
+WHERE OrderTime BETWEEN '2017-01-01' and '2017-01-07';
+
+## retrieve data using customerid between 5 and 10.
+SELECT * FROM orders
+WHERE CustomerId BETWEEN 5 and 10;
+
+## get the count of it
+SELECT COUNT(*) FROM orders
+WHERE CustomerId BETWEEN 5 and 10;
