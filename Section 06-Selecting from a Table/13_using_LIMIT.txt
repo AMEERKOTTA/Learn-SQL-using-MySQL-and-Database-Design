@@ -1,0 +1,12 @@
+SELECT * FROM customers
+LIMIT 10;
+
+SELECT * FROM orders
+LIMIT 5;
+
+SELECT * FROM orders
+LIMIT 5 OFFSET 5;
+
+## Next 10 values
+SELECT * FROM customers
+LIMIT 10 OFFSET 10;
