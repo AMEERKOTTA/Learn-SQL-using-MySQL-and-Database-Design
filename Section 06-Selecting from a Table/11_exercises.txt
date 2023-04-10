@@ -1,0 +1,35 @@
+SHOW DATABASES;
+USE coffee_store;
+SHOW TABLES;
+## from the products table, select the name and price of all products with coffee
+## origin equal to columbia or indonesia. ordered by name from A-Z.
+solution 1
+SELECT Name, Price FROM products
+WHERE CoffeeOrigin = 'COLUMBIA' OR CoffeeOrigin = 'INDONESIA'
+ORDER BY Name ASC;
+solution 2
+SELECT Name, Price FROM products 
+WHERE CoffeeOrigin IN ('Columbia','Indonesia')
+ORDER BY Name;
+
+
+## From the order table, select all the orders from feb 2017.
+## for customers with ids (2,4,6 or 8)
+solution 1
+SELECT * FROM orders
+WHERE OrderTime > '2017-02-01'
+AND CustomerId IN (2,4,6,8);
+
+solution 2
+SELECT * FROM orders 
+WHERE order_time BETWEEN '2017-02-01' AND '2017-02-28'
+AND customer_id IN (2,4,6,8);
+
+
+## from the customer table, select the first name and phone number of all customer
+## whose last name containing 'ar'.
+SELECT FirstName, PhoneNumber, SecondName FROM customers
+WHERE SecondName LIKE '%ar%';
+
+SELECT FirstName, PhoneNumber, SecondName FROM customers 
+WHERE SecondName LIKE '%ar%';
