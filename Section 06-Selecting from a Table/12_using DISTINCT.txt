@@ -1,0 +1,13 @@
+SHOW DATABASES;
+USE coffee_store;
+SHOW TABLES;
+
+SELECT * FROM products;
+## selecting the distinct value from the coffeeorigin table.
+SELECT DISTINCT CoffeeOrigin FROM products;
+
+## how many distinct customers order between this time.
+SELECT DISTINCT CustomerId, ProductId, OrderTime FROM orders
+WHERE OrderTime BETWEEN '2017-02-01' AND '2017-02-28'
+ORDER BY CustomerId ASC;
+
