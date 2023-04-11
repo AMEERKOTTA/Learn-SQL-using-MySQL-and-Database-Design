@@ -1,0 +1,45 @@
+SHOW DATABASES;
+USE coffee_store;
+SHOW TABLES;
+
+SELECT * FROM products;
+SELECT * FROM orders;
+
+## I want to do a INNER JOIN.
+## to fetch the name of the Products from product table.
+## and Ordertime from the Order Table.
+
+SELECT products.Name, orders.OrderTime FROM orders
+INNER JOIN products
+ON orders.ProductId = products.Id;
+
+## short form method
+SELECT p.Name, o.OrderTime FROM
+orders o JOIN products p
+ON o.ProductId = p.Id;
+
+## adding price column as well.
+## then order by using the OrderTime column.
+SELECT p.Name, o.OrderTime, p.Price FROM
+orders o JOIN products p
+ON o.ProductId = p.Id
+ORDER BY o.OrderTime;
+
+## giving a where condition as well.
+SELECT p.Name, o.OrderTime, p.Price FROM
+orders o JOIN products p
+ON o.ProductId = p.Id
+WHERE o.ProductId = 5
+ORDER BY o.OrderTime;
+
+
+============================================================
+This is incomplete.
+## another query using orders table and customers table.
+SELECT * FROM orders;
+SELECT * FROM customers;
+# o - orders table
+# c - customers table
+SELECT c.FirstName, c.SecondName, o.ProdcutId, o.OrderTime
+FROM orders o JOIN customers c
+ON o.ProductId = c.;
