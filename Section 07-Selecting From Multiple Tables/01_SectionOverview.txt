@@ -1,0 +1,6 @@
+Section Overview
+
+	+ How to SELECT data from multiple tables using different types of JOIN statement in SQL.
+	+ How to write inner JOIN query.
+	+ How to write LEFT and RIGHT JOINs queries and differences between them.
+	+ How to SELECT data from more than two Tables using multiple JOIN statement.
