@@ -6,5 +6,6 @@ There are different kind of Joins.
 
 INNER JOIN : This will Retrieve data only when there is matching values in both tables.
 
-LEFT JOIN : This will retrieve all data from the left table (table1) and matching rows from the right table (table 2).
+LEFT JOIN : This will retrieve all data from the left table (table1) and matching rows from the right table (table2).
 
+RIGHT JOIN : This will retrieve all data from the right table (table2) and matching rows from the left table (table1).
