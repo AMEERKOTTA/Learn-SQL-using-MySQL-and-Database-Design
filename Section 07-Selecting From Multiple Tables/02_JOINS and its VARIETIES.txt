@@ -1,0 +1,8 @@
+Joins allows you to retrieve data from multiple tables in a Single Select statement.
+
+To Join two tables there should be a related column between the tables.
+
+There are different kind of Joins.
+
+INNER JOIN : This will Retrieve data only when there is matching values in both tables.
+
