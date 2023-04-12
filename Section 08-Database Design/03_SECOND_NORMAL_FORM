@@ -1,0 +1,6 @@
+A table is said to be in Second Normal Form.
+
+    + They confirm to First Normal Form.
+    + Every Column that is not a Primary Key of the table is dependent of the whole Primary Key.
+    
+    
