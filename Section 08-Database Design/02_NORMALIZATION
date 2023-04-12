@@ -1,0 +1,27 @@
+What is Normalization. ?
+--------------------------------------------------
+
+Normalization is the Process of Efficiently organizing data in a Database.
+
+
+Why use Normalization while Database Design.
+--------------------------------------------------
+    + Normalization is to eliminate reduntant data.
+    + ie, to avoid storing duplicate data in a Table.
+    + To Only Store Related Data in a Table.
+    + ie, We don't want to store same data in different Tables.
+    
+ Benefits of Normalization.
+ --------------------------------------------------
+ 
+    + Reduce Storage Space
+    + Reduce INSERT, UPDATE and DELETE anomolies.
+    + Improve Query Perfomance.
+    
+ Levels of Normalization in Database Design.
+ ---------------------------------------------------
+ 
+    1. 1st Normal Form (1NF)
+    2. 2nd Normal Form (2NF)
+    3. 3rd Normal Form (3NF)
+    4. Boyce and Codd Normal Form (BCNF)
