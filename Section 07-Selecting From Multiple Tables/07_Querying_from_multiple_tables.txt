@@ -1,0 +1,14 @@
+USE coffee_store;
+
+SELECT * FROM customers;
+SELECT * FROM orders;
+SELECT * FROM products;
+
+## selecting data from three above tables
+## using join statements,.
+SELECT products.Name, products.Price,
+		customers.FirstName, customers.SecondName,
+        orders.OrderTime
+FROM products
+JOIN orders ON products.Id = orders.ProductId
+JOIN customers ON customers.Id = orders.CustomerId;
