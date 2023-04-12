@@ -33,7 +33,7 @@ WHERE o.ProductId = 5
 ORDER BY o.OrderTime;
 
 
-============================================================
+=============================================================
 This is incomplete.
 ## another query using orders table and customers table.
 SELECT * FROM orders;
