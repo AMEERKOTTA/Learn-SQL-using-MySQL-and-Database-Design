@@ -1,0 +1,26 @@
+## RIGHT JOINS 
+SHOW DATABASES;
+USE coffee_store;
+SHOW TABLES;
+
+SELECT * FROM customers;
+SELECT * FROM products;
+SELECT * FROM orders;
+
+## query to Right join customers and orders table.
+## with customer_id column in the orders table.
+## and Id column in the customers table.
+SELECT orders.Id, customers.PhoneNumber, customers.SecondName, orders.OrderTime
+FROM orders
+RIGHT JOIN customers ON
+orders.CustomerId = customers.Id
+ORDER BY orders.OrderTime
+LIMIT 10;
+
+## Changing the orders and customer tables
+SELECT orders.Id, customers.PhoneNumber, customers.SecondName, orders.OrderTime
+FROM customers
+RIGHT JOIN orders ON
+customers.Id = orders.CustomerId
+ORDER BY orders.OrderTime
+LIMIT 10;
