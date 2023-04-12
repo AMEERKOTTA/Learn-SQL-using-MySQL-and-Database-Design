@@ -1,0 +1,44 @@
+SELECT * FROM orders;
+SELECT * FROM customers;
+SELECT * FROM products;
+======================================================================================================================================
+## select the order id and customers phone number for all orders of product id = 4.
+## wrong
+SELECT orders.Id, customers.PhoneNumber
+FROM orders 
+JOIN customers ON orders.Id = customers.Id
+WHERE orders.ProductId = 4;
+
+## correct.
+SELECT o.Id, c.PhoneNumber FROM orders o
+JOIN customers c ON o.CustomerId = c.Id
+WHERE o.ProductId = 4;
+=====================================================================================================================================
+## select product name and ordertime for filter coffees 
+## sold between Jan 15 2017 and Feb 14 2017.
+SELECT products.Name, orders.OrderTime
+FROM products
+JOIN orders ON products.Id = orders.ProductId
+WHERE orders.OrderTime BETWEEN '2017-01-15' AND '2017-02-14'
+AND products.Name = 'FILTER';
+
+SELECT p.Name, o.OrderTime FROM products p
+JOIN orders o ON p.Id = o.ProductId
+WHERE p.Name = 'FILTER'
+AND o.OrderTime BETWEEN '2017-01-15' AND '2017-02-14';
+=====================================================================================================================================
+## select the product name, price, and ordertime for all orders
+## from females in Jan 2017.
+SELECT products.Name, products.Price, orders.OrderTime
+FROM products
+JOIN orders ON orders.CustomerId = products.Id                      Fist Mistake
+JOIN customers ON customers.Id = orders.CustomerId
+WHERE customers.Gender = 'F'
+AND orders.OrderTime BETWEEN '2017-01-01' AND '2017-01-31';
+
+SELECT p.Name, p.Price, o.OrderTime FROM products p
+JOIN orders o ON p.Id = o.ProductId
+JOIN customers c ON o.CustomerId = c.Id
+WHERE c.Gender = 'F'
+AND o.OrderTime BETWEEN '2017-01-01' AND '2017-01-31';
+
