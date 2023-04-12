@@ -1,0 +1,5 @@
+Section Overview
+
+	+ What is Normalizations 
+	+ Relationships and Types of Relationships.
+	+ Constraints.
