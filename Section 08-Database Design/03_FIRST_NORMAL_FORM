@@ -1,0 +1,5 @@
+Tables are in 1NF if 
+
+    + No repeated row of Data.
+    + Columns only Contains a Single Value.
+    + The table has a Primary Key.
