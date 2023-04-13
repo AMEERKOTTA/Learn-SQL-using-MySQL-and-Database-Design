@@ -1,0 +1,4 @@
+3rd Normal Form if 
+
+    + They Confirm to Second Normal Form.
+    + Every Column that is not a Primary Key is only dependent on the whole of the Primary Key.
