@@ -1,0 +1,18 @@
+When two tables can have many Instances of each other.
+
+Many-to-Many Relationship exists when many records in the 1st table having a 
+relationship with many records in the 2nd table and similarly many records in 
+the 2nd table having a relationship with many records in the 1st table.
+
+Entities
+    + Employee
+    + Duty_Shifts
+    + Attributes of Employee
+            + Employee_id
+            + Employee_name
+            + Attributes of Duty_Shifts
+                    + Duty_shift_id
+                    + Duty_shift
+                    + Relationship
+
+Many “Employee” can work in many  “Duty_Shifts”.
