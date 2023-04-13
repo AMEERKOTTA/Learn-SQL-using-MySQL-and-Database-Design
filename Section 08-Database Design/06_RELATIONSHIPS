@@ -1,0 +1,5 @@
+Tales are related through primary and foreign keys.
+
+  + One to One Relationship.
+  + One to Many Relationship.
+  + Many to Many Relationship.
