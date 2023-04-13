@@ -1,0 +1,21 @@
+Primary Key of one table can be in Multiple rows of a Foreign Key column of another table.
+
+One-to-Many Relationship exists when a single record in the 1st table 
+is having a relationship with many records in the 2nd table.
+
+Entities
+    + Employee
+    + Salary_slips
+
+Attributes of Employee
+    + Employee_id
+    + Employee_name
+    + Attributes of Salary_slips
+
+          + Salary_issued
+          + Year
+          + Month
+          + Total_Salary
+          + Relationship
+
+One “Employee” can have many “Salary_slips”.
