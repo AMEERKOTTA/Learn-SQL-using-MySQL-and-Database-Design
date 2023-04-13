@@ -1,0 +1,17 @@
+One-to-One Relationship exists when a single record in the 1st table is having a relationship
+with only one record in the 2nd table, and similarly, we can say that a single record in the 
+2nd table is related to only one record in the 1st table.
+
+Entities
+    + Student
+    + Scholarship
+    
+Attributes of Student
+    + Student_id
+    + class
+
+Attributes of Scholarship
+    + scholarship_id
+    + scholarship_type
+    + scholarship_year.
+    
