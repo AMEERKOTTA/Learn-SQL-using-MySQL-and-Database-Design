@@ -1,0 +1,6 @@
+Section Introduction
+
+	+ Create a Database for a Cinema Online Booking System.
+	+ Consisting of 7 Tables.
+	+ Explanation of the Database Schema.
+	+ Inserting data into our completed database.
