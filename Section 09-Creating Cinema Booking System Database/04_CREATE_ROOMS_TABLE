@@ -1,0 +1,20 @@
+SHOW DATABASES;
+USE cinema_booking_system;
+SHOW TABLES;
+
+## craete table rooms
+## columns 
+## id - INT - PRIMARY KEY - AUTO INCREMENT.
+## name - VARCHAR(45), NOT NULL,
+## no_seats - INT NOT NULL.
+
+===============================================
+CREATE TABLE rooms(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(45) NOT NULL,
+    no_seats INT NOT NULL
+);
+===============================================
+
+SHOW TABLES;
+DESCRIBE rooms;
