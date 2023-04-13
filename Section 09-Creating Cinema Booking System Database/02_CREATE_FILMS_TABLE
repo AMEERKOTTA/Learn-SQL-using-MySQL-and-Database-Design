@@ -1,0 +1,22 @@
+SHOW DATABASES;
+CREATE DATABASE cinema_booking_system;
+USE cinema_booking_system;
+
+
+## Create the FIrst Table
+## Table - Films
+## Column 1 - id -- INT, Primary Key, and Auto Incremented.
+## Column 2 - name --- varchar (45), NOT NULL and UNIQUE constraints added.
+## Column 3 - length_min --- INT NOT NULL constraint.
+
+=========================================================================
+CREATE TABLE films(
+	id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(45) NOT NULL UNIQUE,
+    length_min INT NOT NULL
+);
+=========================================================================
+
+SHOW TABLES;
+SELECT * FROM films;
+DESCRIBE films;
