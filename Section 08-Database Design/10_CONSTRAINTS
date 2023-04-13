@@ -1,0 +1,11 @@
+Applying constraints means we are making some constraints to work on that column that we applied.
+
+  1. NOT NULL    : A column can't contain any null value.
+  2. UNIQUE      : A coulmn can't contain any duplicate value of data.
+  3. PRIMARY KEY : A column that uniquely identifies each row of data.
+  4. FOREIGN KEY : A column which is related to a primary key in another table.
+  5. CHECK       : Controls the value that can be Inserted into the column.
+         Example : CHECK (ratings BETWEEN 0 AND 100)
+         This will CHECK the values that are inserted into column ratings are between 0 and 100.
+  6. DEFAULT     : If no values is inserted into a Column, you can set a default value.
+         Example : email DEFAULT 'No Data'.
