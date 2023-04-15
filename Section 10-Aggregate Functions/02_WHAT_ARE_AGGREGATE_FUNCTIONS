@@ -1,0 +1,8 @@
+AGGREGATE FUNCTIONS
+
+    Perform a Calculations on data within a Column and returns the Result row.
+    
+Example.
+    
+     Can use GROUP BY clauses to group the results by one or more columns.
+     Can use HAVING clause in a similar way to WHERE clause in a SELECT statement to filter the result set.
