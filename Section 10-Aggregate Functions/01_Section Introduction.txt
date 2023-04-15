@@ -1,0 +1,7 @@
+Section Introduction
+
+		+ What the aggregate functions are ?
+		+ How to use COUNT, MIN, MAX, SUM and AVG functions.
+		+ How to use data using GROUP BY clauses.
+		+ What the HAVING clause is and how to use it.
+		+ Exercise and Solutions.
