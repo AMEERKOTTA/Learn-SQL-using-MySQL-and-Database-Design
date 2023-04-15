@@ -1,0 +1,28 @@
+SHOW DATABASES;
+USE cinema_booking_system;
+SHOW TABLES;
+
+## Select the customer id and count number of reserved seats grouped by customer by for october 2017.
+SELECT * FROM bookings;
+SELECT * FROM customers;
+SELECT * FROM screenings;
+SELECT * FROM reserved_seats;
+
+SELECT customer_id, COUNT(*) FROM reserved_seats
+GROUP BY customer_id;
+
+SELECT bookings.customer_id, COUNT(reserved_seat.id) 
+FROM bookings
+JOIN reserved_seat  ON bookings.id = reserved_seat.booking_id
+GROUP BY bookings.customer_id;
+
+
+-- 2. Select the film name and count the number of screenings for each film that is over
+-- 2 hours long.
+
+SELECT films.name, films.length_min, COUNT(screenings.id) 
+FROM films
+JOIN screenings ON films.id = screenings.film_id 
+GROUP BY films.name, films.length_min
+HAVING films.length_min > 120;
+
