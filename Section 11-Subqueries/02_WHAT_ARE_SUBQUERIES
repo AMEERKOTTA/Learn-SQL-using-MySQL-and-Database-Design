@@ -7,3 +7,13 @@ SubQueries are queries nested within other queries.
       (SELECT id FROM films
        WHERE length_min > 120)
   ======================================================
+
+Subqueries can be used in a SELECT, INSERT, UPDATE and DELETE statements.
+
+The Nested Query can be in the WHERE clause or the FROM.
+
+Two Types of Sub Queries 
+
+    1. Non - Correlated Subqureries.
+    2. Correlated Subqueries.
+    
