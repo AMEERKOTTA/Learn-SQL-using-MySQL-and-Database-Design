@@ -1,4 +1,5 @@
 The Inner Query cannot run independently of the outer query.
+Because Inner query using data from the outer query.
 
 Example
   SELECT screening_id, customer_id,
