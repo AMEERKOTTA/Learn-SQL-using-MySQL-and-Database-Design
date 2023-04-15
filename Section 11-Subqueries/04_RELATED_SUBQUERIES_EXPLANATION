@@ -1,0 +1,9 @@
+The Inner Query cannot run independently of the outer query.
+
+Example
+  SELECT screening_id, customer_id,
+  (SELECT count(seat_id) FROM reserved_seat 
+   WHERE booking_id = b.id)
+  FROM bookings b;
+  
+The Inner Query runs for Every Row in the Outer Query.
