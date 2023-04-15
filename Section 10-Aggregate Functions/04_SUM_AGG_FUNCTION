@@ -1,0 +1,13 @@
+SHOW DATABASES;
+USE cinema_booking_system;
+
+SELECT * FROM rooms;
+
+## checking the sum of number of seats.
+SELECT SUM(no_seats) FROM rooms;
+
+SELECT SUM(no_seats) FROM rooms
+WHERE id > 1;
+
+SELECT SUM(no_seats) FROM rooms
+WHERE id > 2;
