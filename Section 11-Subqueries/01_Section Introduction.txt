@@ -1,0 +1,7 @@
+Section Introduction
+
+		+ What are Subqueries ?
+		+ Different types of Subqueries.
+		+ Non-Correlated Subqueries.
+		+ Correlated Subqueries
+		+ Exercise and Solutions.
