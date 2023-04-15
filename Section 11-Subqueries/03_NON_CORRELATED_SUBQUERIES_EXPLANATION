@@ -1,0 +1,15 @@
+Non Correlated Sub Query.
+
+  + The Inner Query can run independently of the Outer Query.
+  + The Inner Query runs first and produces a result. And it runs only once.
+  + Which is used by the outer query.
+  
+  Example
+  SELECT id, start_time, FROM screenings   OUTER QUERy
+  WHERE film_id IN
+      (SELECT id FROM films                INNER QUERY
+        WHERE length_min > 120)
+        
+  + Inner Query runs first and produces a result set, which is then used by the outer query.
+  
+  
