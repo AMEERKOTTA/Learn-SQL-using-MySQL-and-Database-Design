@@ -1,0 +1,28 @@
+SHOW DATABASES;
+USE cinema_booking_system;
+SHOW TABLES;
+
+====================================================================================
+## How many bookings did customer id 10 makes in october 2017.
+SELECT * FROM bookings;
+SELECT * FROM customers;
+SELECT COUNT(*) FROM bookings
+WHERE customer_id = 10;
+====================================================================================
+====================================================================================
+## Count the NUmber of Screenings for the Blade Runner 2049 in October 2017.
+SELECT * FROM screenings;
+SELECT * FROM films;
+
+SELECT COUNT(*) FROM screenings
+JOIN films ON screenings.film_id = films.id
+WHERE films.name = 'Blade Runner 2049';
+====================================================================================
+====================================================================================
+## count the number of unique customers who made a booking for october 2017
+SELECT * FROM bookings;
+SELECT * FROM customers;
+
+SELECT COUNT(DISTINCT(customer_id)) FROM bookings;
+====================================================================================
+
