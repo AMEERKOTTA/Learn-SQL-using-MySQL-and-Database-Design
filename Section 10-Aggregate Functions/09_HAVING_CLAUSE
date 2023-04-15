@@ -1,0 +1,24 @@
+SHOW DATABASES;
+USE cinema_booking_system;
+SHOW TABLES;
+
+=================================================================================
+## using HAVING method to filter the result.
+SELECT customer_id, screening_id, COUNT(id)
+FROM bookings
+GROUP BY customer_id, screening_id
+HAVING customer_id = 10;
+=================================================================================
+
+
+==========================================================================================
+SELECT films.name, screenings.start_time, customers.first_name, 
+				customers.last_name, COUNT(bookings.id)
+FROM films
+JOIN screenings ON films.id = screenings.film_id
+JOIN bookings ON screenings.id = bookings.screening_id
+JOIN customers ON bookings.customer_id = customers.id
+GROUP BY  films.name, screenings.start_time, customers.first_name, customers.last_name
+HAVING customers.last_name = 'Smith'
+ORDER BY screenings.start_time;
+==========================================================================================
