@@ -1,0 +1,27 @@
+SHOW DATABASES;
+USE cinema_booking_system;
+SHOW TABLES;
+
+SELECT * FROM bookings;
+## check the number of id in the table - ie the count.
+SELECT COUNT(*) FROM bookings;
+SELECT customer_id, COUNT(id) FROM bookings;  -- ERROR
+
+## using group by statement.
+SELECT customer_id,COUNT(id) FROM bookings
+GROUP BY customer_id;
+
+## adding the screening_id as well
+SELECT customer_id,screening_id,COUNT(id) FROM bookings
+GROUP BY customer_id,screening_id
+ORDER BY customer_id;
+
+## Query
+SELECT films.name, screenings.start_time, customers.first_name, 
+				customers.last_name, COUNT(bookings.id)
+FROM films
+JOIN screenings ON films.id = screenings.film_id
+JOIN bookings ON screenings.id = bookings.screening_id
+JOIN customers ON bookings.customer_id = customers.id
+GROUP BY  films.name, screenings.start_time, customers.first_name, customers.last_name
+ORDER BY screenings.start_time;
