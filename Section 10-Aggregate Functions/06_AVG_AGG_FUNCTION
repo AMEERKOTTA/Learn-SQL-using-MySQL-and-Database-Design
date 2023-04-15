@@ -1,0 +1,10 @@
+SHOW DATABASES;
+USE cinema_booking_system;
+SHOW TABLES;
+
+SELECT * FROM films;
+
+SELECT AVG(length_min) FROM films;
+
+SELECT AVG(length_min) FROM films
+WHERE length_min > 90;
