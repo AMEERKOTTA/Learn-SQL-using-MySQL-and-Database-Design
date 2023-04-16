@@ -8,7 +8,7 @@
 + Section 5 : Data Manipulation Language.
 + Section 6 : Selecting from a Table.
 + Section 7 : Selecting from Multiple Tables.
-+ Section 8 :  Database Design.
++ Section 8 : Database Design.
 + Section 9 : 
 + Section 10 : 
 + Section 11 : 
