@@ -10,7 +10,7 @@
 + Section 7 : Selecting from Multiple Tables.
 + Section 8 : Database Design.
 + Section 9 : Creating a Cinema Booking System Database.
-+ Section 10 : 
++ Section 10 : Aggregate Functions.
 + Section 11 : 
 + Section 12 : 
 + Section 13 : 
