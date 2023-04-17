@@ -11,7 +11,7 @@
 + Section 8 : Database Design.
 + Section 9 : Creating a Cinema Booking System Database.
 + Section 10 : Aggregate Functions.
-+ Section 11 : Subqueries
-+ Section 12 : 
++ Section 11 : Subqueries.
++ Section 12 : MySQL Funcrions : String Functions and Date Functions.
 + Section 13 : 
 + Section 14 : 
